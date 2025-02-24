@@ -92,10 +92,11 @@ a{
     
     width: 100%;
 }
+
 /* _________________HEADER___________________*/
 header{
-    padding: 16px 0 16px 0;
-border-bottom: 1px solid #DDE1E6 ;
+    padding: 16px 0;
+    border-bottom: 1px solid #DDE1E6 ;
 }
 header .row{
     display: flex;
@@ -114,13 +115,62 @@ header .row{
     color: #455A64;
 
 }
-.nav-bar ul{
+.nav-bar > ul{
     display: flex;
     gap: 16px;
+    align-items: center;
 }
 .nav-bar li{
     padding: 0 8px;
 }
+.nav-bar span svg{
+     vertical-align: middle;
+}
+.dropdown{
+    position: relative;
+    
+}
+.dropdown span {
+    color: #455a6499;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+.dropdown .drop-list{
+    position: absolute;
+    top: 130%;
+    left: 0;
+   min-width: 135px;
+   min-height: 126px;
+   border-radius: 8px;
+   background-color: #fff;
+   box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.25);
+   align-items: flex-start;
+   visibility: hidden;
+   transition: all 1s;
+   opacity: 0;
+}
+
+.drop-list li{
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+}
+.dropdown .drop-list li a{
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.drop-list li:last-child {
+    border-bottom: none;
+  }
+  .dropdown :hover  + .drop-list {
+    visibility: visible;
+    opacity: 1;
+    
+  }
 
 header .nav-btns{
     display: flex;
@@ -157,7 +207,8 @@ header .nav-btns{
 }
 
 /* _________________ H E R O S E C T I O N ________________*/
- .hero-section .row{
+ 
+.hero-section .row{
     display: flex;
  }
 
