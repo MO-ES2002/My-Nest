@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-
 body {
   font-family: Roboto;
 }
-
 .container {
   max-width: 1300px;
   padding-left: 15px;
@@ -16,22 +15,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .row {
   margin-left: -15px;
   margin-right: -15px;
 }
-
 /* .row::after{
     content: "";
     display: block;
     clear: both;
-
+    
 } */
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
@@ -49,58 +45,46 @@ a {
 .col-11,
 .col-12 {
   width: 100%;
+
   padding-left: 16px;
   padding-right: 16px;
 }
-
 .col-auto {
   width: auto;
 }
-
 .col-1 {
   width: 8.333333%;
 }
-
 .col-2 {
   width: 16.666667%;
 }
-
 .col-3 {
   width: 25%;
 }
-
 .col-4 {
   width: 33.333333%;
 }
-
 .col-5 {
   width: 41.666667%;
 }
-
 .col-6 {
   width: 50%;
 }
-
 .col-7 {
   width: 58.333333%;
 }
-
 .col-8 {
   width: 66.666667%;
 }
-
 .col-9 {
   width: 75%;
 }
-
 .col-10 {
   width: 83.333333%;
 }
-
 .col-11 {
   width: 91.666667%;
 }
-
 .col-12 {
   width: 100%;
 }
@@ -110,7 +94,6 @@ header {
   padding: 16px 0;
   border-bottom: 1px solid #dde1e6;
 }
-
 header .row {
   display: flex;
   justify-content: space-between;
@@ -118,41 +101,35 @@ header .row {
 }
 
 .nav-bar ul li a {
-  color: rgba(69, 90, 100, 0.6);
+  color: #455a6499;
   font-size: 16px;
+
   font-weight: 500;
 }
-
 .nav-bar ul li .home {
   color: #455a64;
 }
-
 .nav-bar > ul {
   display: flex;
   gap: 16px;
   align-items: center;
 }
-
 .nav-bar li {
   padding: 0 8px;
 }
-
 .nav-bar span svg {
   vertical-align: middle;
 }
-
 .dropdown {
   position: relative;
 }
-
 .dropdown span {
-  color: rgba(69, 90, 100, 0.6);
+  color: #455a6499;
   font-weight: 500;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
 .dropdown .drop-list {
   position: absolute;
   top: 130%;
@@ -172,18 +149,15 @@ header .row {
   padding: 10px;
   border-bottom: 1px solid #dedede;
 }
-
 .dropdown .drop-list li a {
   text-align: left;
   color: #000;
   font-size: 16px;
   font-weight: 400;
 }
-
 .drop-list li:last-child {
   border-bottom: none;
 }
-
 .dropdown :hover + .drop-list {
   visibility: visible;
   opacity: 1;
@@ -202,7 +176,6 @@ header .nav-btns {
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-
 .nav-btns .login-btn:hover {
   background-color: #455a64;
   color: #fff;
@@ -217,13 +190,13 @@ header .nav-btns {
   color: #fff;
   border: 1px solid #455a64;
 }
-
 .nav-btns .signup-btn:hover {
   background-color: #fff;
   color: #455a64;
 }
 
 /* _________________ H E R O S E C T I O N ________________*/
+
 .hero-section .row {
   display: flex;
 }
@@ -231,7 +204,6 @@ header .nav-btns {
 .hero-section {
   padding: 32px 0;
 }
-
 .hero-img img {
   width: 100%;
 }
@@ -271,7 +243,6 @@ header .nav-btns {
   border: none;
   margin: -4px;
 }
-
 /*_______________________A B O U T U S S E C T I O N________________________*/
 .aboutus-section {
   margin: 80px 0;
@@ -280,14 +251,12 @@ header .nav-btns {
 .aboutus-section .text-group {
   text-align: center;
 }
-
 .aboutus-section .text-group h2 {
   color: #21272a;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.1em;
 }
-
 .aboutus-section .text-group p {
   color: #21272a;
   font-size: 18px;
@@ -295,12 +264,10 @@ header .nav-btns {
   line-height: 1.4em;
   padding: 20px 0 32px 0;
 }
-
 .aboutus-section .row {
   display: flex;
   gap: 24px;
 }
-
 .aboutus-section li {
   display: flex;
   gap: 16px;
@@ -308,31 +275,27 @@ header .nav-btns {
   border: 1px solid #dde1e6;
   align-items: center;
 }
-
 .aboutus-section .text h4 {
   color: #21272a;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.1em;
 }
-
 .aboutus-section .text p {
   color: #697077;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4em;
 }
-
 /*__________________________SP-S E C T I O N_________________________*/
+
 .sp-section {
   padding: 80px 0 80px 0;
   background-color: #f2f4f8;
 }
-
 .sp-section .text-group {
   text-align: center;
 }
-
 .sp-section .text-group h2 {
   font-size: 20px;
   font-weight: 700;
@@ -341,30 +304,25 @@ header .nav-btns {
   text-transform: uppercase;
   padding-bottom: 8px;
 }
-
 .sp-section .text-group p {
   color: #21272a;
   font-size: 42px;
   font-weight: 700;
   line-height: 1.1em;
 }
-
 .sp-section .row {
   display: flex;
   padding: 32px 0 32px 0;
   gap: 16px;
 }
-
 .sp-section .col-4 {
   background-color: #fff;
-  border: 1px solid #DDE1E6;
+  border: 1px solid#DDE1E6;
   padding: 24px;
 }
-
 .sp-section .item {
   text-align: center;
 }
-
 .sp-section .item > p {
   color: #21272a;
   font-size: 18px;
@@ -372,7 +330,6 @@ header .nav-btns {
   line-height: 1.4em;
   margin: 16px 0 32px 0;
 }
-
 .sp-section .cont-group h4 {
   color: #21272a;
   font-size: 24px;
@@ -380,20 +337,17 @@ header .nav-btns {
   line-height: 1.1em;
   margin-top: 16px;
 }
-
 .sp-section .cont-group p {
   color: #21272a;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4em;
 }
-
 /*______________________Recently Added____________________*/
 .added-section .textgroup {
   display: flex;
   margin: 32px 0;
 }
-
 .added-section .textgroup h3 {
   color: #455a64;
   font-size: 32px;
@@ -412,17 +366,14 @@ header .nav-btns {
 .added-section .textgroup svg {
   vertical-align: middle;
 }
-
 .added-section .row {
   display: flex;
   flex-wrap: wrap;
 }
-
 .added-section .item {
   display: flex;
   flex-direction: column;
 }
-
 .added-section .item h3 {
   color: #000;
   font-weight: 700;
@@ -430,7 +381,6 @@ header .nav-btns {
   line-height: 1.1em;
   margin: 16px 0 8px 0;
 }
-
 .added-section .item > p {
   color: #000;
   font-size: 14px;
@@ -443,26 +393,22 @@ header .nav-btns {
   display: flex;
   justify-content: space-between;
 }
-
 .added-section .item .living-area h4 {
   color: #455a64;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.1em;
 }
-
 .added-section .item .living-area p {
   color: #000;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.1em;
 }
-
 .added-section .item .living-area p span {
   color: #bebfbf;
   margin-left: 2px;
 }
-
 .added-section .item .btn-buy {
   display: block;
   border: 1px solid #455a64;
@@ -478,17 +424,15 @@ header .nav-btns {
 .added-section .item .btn {
   margin: 24px 0 16px;
 }
-
 .added-section .item .btn-buy:hover {
   background-color: #455a64;
   color: #fff;
 }
-
 /*___________________contact us__________________*/
+
 .contactus-section {
   margin: 54px 0 32px;
 }
-
 .contactus-section h2 {
   color: #313131;
   font-size: 32px;
@@ -496,7 +440,6 @@ header .nav-btns {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 .contactus-section p {
   color: #21272a;
   font-size: 20px;
@@ -504,12 +447,10 @@ header .nav-btns {
   line-height: 1.1em;
   margin: 8px 0 32px;
 }
-
 .contactus-section .btn {
   display: flex;
   gap: 16px;
 }
-
 .contactus-section .btn-contact {
   border: 2px solid #455a64;
   background: #455a64;
@@ -521,12 +462,10 @@ header .nav-btns {
   font-weight: 500;
   transition: background-color 0.5s;
 }
-
 .contactus-section .btn-contact:hover {
   background-color: #fff;
   color: #455a64;
 }
-
 .contactus-section .btn-readmore {
   border: 2px solid #455a64;
   background: #fff;
@@ -538,22 +477,20 @@ header .nav-btns {
   font-weight: 500;
   transition: background-color 0.5s;
 }
-
 .contactus-section .btn-readmore:hover {
   background-color: #455a64;
   color: #fff;
 }
 
 /*________________________S U B S C R I B E______________________*/
+
 .subscribe-section {
   margin: 80px 0;
 }
-
 .subscribe-section .row {
   display: flex;
   gap: 80px;
 }
-
 .subscribe-section h2 {
   color: #21272a;
   font-size: 42px;
@@ -561,18 +498,15 @@ header .nav-btns {
   line-height: 1.1em;
   margin-bottom: 12px;
 }
-
 .subscribe-section p {
   color: #21272a;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4em;
 }
-
 .subscribe-section form {
   text-align: end;
 }
-
 .subscribe-section input {
   padding: 16px 100px 16px 16px;
   font-size: 20px;
@@ -593,28 +527,23 @@ header .nav-btns {
   transition: background-color 0.5s;
   margin-left: 16px;
 }
-
 .subscribe-section button:hover {
   background-color: #fff;
   color: #455a64;
 }
-
 /*____________________________footer_______________________*/
 footer {
   background-color: #455a64;
   padding: 24px 0 48px;
 }
-
 footer .row {
   display: flex;
   justify-content: space-between;
 }
-
 footer .footer-nav ul {
   display: flex;
   gap: 16px;
 }
-
 footer .footer-nav a {
   color: #fff;
   font-size: 16px;
@@ -625,11 +554,8 @@ footer .icon ul {
   display: flex;
   gap: 16px;
 }
-
 .bottom-footer {
   color: #fff;
   text-align: center;
   margin-top: 48px;
 }
-
-/*# sourceMappingURL=style.css.map */
