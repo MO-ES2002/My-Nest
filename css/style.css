@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -22,12 +22,6 @@ body {
   margin-right: -15px;
 }
 
-/* .row::after{
-    content: "";
-    display: block;
-    clear: both;
-
-} */
 ul {
   list-style: none;
 }
@@ -110,50 +104,41 @@ header {
   padding: 16px 0;
   border-bottom: 1px solid #dde1e6;
 }
-
 header .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.nav-bar ul li a {
-  color: rgba(69, 90, 100, 0.6);
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.nav-bar ul li .home {
-  color: #455a64;
-}
-
-.nav-bar > ul {
+header .nav-bar ul {
   display: flex;
   gap: 16px;
   align-items: center;
 }
-
-.nav-bar li {
+header .nav-bar li {
   padding: 0 8px;
 }
-
-.nav-bar span svg {
+header .nav-bar li a {
+  color: rgba(69, 90, 100, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+header .nav-bar li.home a {
+  color: #455a64;
+}
+header .nav-bar span svg {
   vertical-align: middle;
 }
-
-.dropdown {
+header .nav-bar .dropdown {
   position: relative;
 }
-
-.dropdown span {
+header .nav-bar .dropdown span {
   color: rgba(69, 90, 100, 0.6);
   font-weight: 500;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
-.dropdown .drop-list {
+header .nav-bar .dropdown .drop-list {
   position: absolute;
   top: 130%;
   left: 0;
@@ -162,39 +147,32 @@ header .row {
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  align-items: flex-start;
   visibility: hidden;
-  transition: all 1s;
   opacity: 0;
+  transition: all 1s;
 }
-
-.drop-list li {
+header .nav-bar .dropdown .drop-list li {
   padding: 10px;
   border-bottom: 1px solid #dedede;
 }
-
-.dropdown .drop-list li a {
+header .nav-bar .dropdown .drop-list li a {
   text-align: left;
   color: #000;
   font-size: 16px;
   font-weight: 400;
 }
-
-.drop-list li:last-child {
+header .nav-bar .dropdown .drop-list li:last-child {
   border-bottom: none;
 }
-
-.dropdown :hover + .drop-list {
+header .nav-bar .dropdown:hover + .drop-list {
   visibility: visible;
   opacity: 1;
 }
-
 header .nav-btns {
   display: flex;
   gap: 16px;
 }
-
-.nav-btns .login-btn {
+header .nav-btns .login-btn {
   border: 1px solid #455a64;
   padding: 16px 28px;
   color: #455a64;
@@ -202,13 +180,11 @@ header .nav-btns {
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-
-.nav-btns .login-btn:hover {
+header .nav-btns .login-btn:hover {
   background-color: #455a64;
   color: #fff;
 }
-
-.nav-btns .signup-btn {
+header .nav-btns .signup-btn {
   background: #455a64;
   padding: 16px 28px;
   font-size: 16px;
@@ -217,58 +193,51 @@ header .nav-btns {
   color: #fff;
   border: 1px solid #455a64;
 }
-
-.nav-btns .signup-btn:hover {
+header .nav-btns .signup-btn:hover {
   background-color: #fff;
   color: #455a64;
 }
 
 /* _________________ H E R O S E C T I O N ________________*/
-.hero-section .row {
-  display: flex;
-}
-
 .hero-section {
   padding: 32px 0;
 }
-
-.hero-img img {
+.hero-section .row {
+  display: flex;
+}
+.hero-section .hero-img img {
   width: 100%;
 }
-
-.hero-content h1 {
+.hero-section .hero-content h1 {
   color: #21272a;
   font-size: 54px;
   font-weight: 700;
   line-height: 1.1em;
 }
-
-.hero-content p {
+.hero-section .hero-content p {
   color: #21272a;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4em;
   padding: 24px 0 56px 0;
 }
-
-.buy-btn {
-  background-color: #455a64;
+.hero-section .buy-btn,
+.hero-section .rent-btn {
   padding: 16px 72px;
-  color: #fff;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.5px;
   border: none;
 }
-
-.rent-btn {
+.hero-section .buy-btn.buy-btn,
+.hero-section .rent-btn.buy-btn {
+  background-color: #455a64;
+  color: #fff;
+}
+.hero-section .buy-btn.rent-btn,
+.hero-section .rent-btn.rent-btn {
   background-color: rgba(223, 217, 217, 0.8);
-  padding: 16px 72px;
   color: rgba(11, 11, 11, 0.7);
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border: none;
   margin: -4px;
 }
 
@@ -276,18 +245,15 @@ header .nav-btns {
 .aboutus-section {
   margin: 80px 0;
 }
-
 .aboutus-section .text-group {
   text-align: center;
 }
-
 .aboutus-section .text-group h2 {
   color: #21272a;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.1em;
 }
-
 .aboutus-section .text-group p {
   color: #21272a;
   font-size: 18px;
@@ -295,12 +261,10 @@ header .nav-btns {
   line-height: 1.4em;
   padding: 20px 0 32px 0;
 }
-
 .aboutus-section .row {
   display: flex;
   gap: 24px;
 }
-
 .aboutus-section li {
   display: flex;
   gap: 16px;
@@ -308,15 +272,13 @@ header .nav-btns {
   border: 1px solid #dde1e6;
   align-items: center;
 }
-
-.aboutus-section .text h4 {
+.aboutus-section li .text h4 {
   color: #21272a;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.1em;
 }
-
-.aboutus-section .text p {
+.aboutus-section li .text p {
   color: #697077;
   font-size: 16px;
   font-weight: 400;
@@ -325,14 +287,12 @@ header .nav-btns {
 
 /*__________________________SP-S E C T I O N_________________________*/
 .sp-section {
-  padding: 80px 0 80px 0;
+  padding: 80px 0;
   background-color: #f2f4f8;
 }
-
 .sp-section .text-group {
   text-align: center;
 }
-
 .sp-section .text-group h2 {
   font-size: 20px;
   font-weight: 700;
@@ -341,47 +301,40 @@ header .nav-btns {
   text-transform: uppercase;
   padding-bottom: 8px;
 }
-
 .sp-section .text-group p {
   color: #21272a;
   font-size: 42px;
   font-weight: 700;
   line-height: 1.1em;
 }
-
 .sp-section .row {
   display: flex;
-  padding: 32px 0 32px 0;
+  padding: 32px 0;
   gap: 16px;
 }
-
 .sp-section .col-4 {
   background-color: #fff;
-  border: 1px solid #DDE1E6;
+  border: 1px solid #dde1e6;
   padding: 24px;
 }
-
 .sp-section .item {
   text-align: center;
 }
-
-.sp-section .item > p {
+.sp-section .item p {
   color: #21272a;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4em;
   margin: 16px 0 32px 0;
 }
-
-.sp-section .cont-group h4 {
+.sp-section .item .cont-group h4 {
   color: #21272a;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.1em;
   margin-top: 16px;
 }
-
-.sp-section .cont-group p {
+.sp-section .item .cont-group p {
   color: #21272a;
   font-size: 18px;
   font-weight: 400;
@@ -393,14 +346,12 @@ header .nav-btns {
   display: flex;
   margin: 32px 0;
 }
-
 .added-section .textgroup h3 {
   color: #455a64;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.1em;
 }
-
 .added-section .textgroup a {
   margin-left: auto;
   color: #455a64;
@@ -408,21 +359,17 @@ header .nav-btns {
   font-weight: 400;
   line-height: 1.1em;
 }
-
 .added-section .textgroup svg {
   vertical-align: middle;
 }
-
 .added-section .row {
   display: flex;
   flex-wrap: wrap;
 }
-
 .added-section .item {
   display: flex;
   flex-direction: column;
 }
-
 .added-section .item h3 {
   color: #000;
   font-weight: 700;
@@ -430,39 +377,33 @@ header .nav-btns {
   line-height: 1.1em;
   margin: 16px 0 8px 0;
 }
-
-.added-section .item > p {
+.added-section .item p {
   color: #000;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.1em;
   margin-bottom: 24px;
 }
-
 .added-section .item .living-area {
   display: flex;
   justify-content: space-between;
 }
-
 .added-section .item .living-area h4 {
   color: #455a64;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.1em;
 }
-
 .added-section .item .living-area p {
   color: #000;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.1em;
 }
-
 .added-section .item .living-area p span {
   color: #bebfbf;
   margin-left: 2px;
 }
-
 .added-section .item .btn-buy {
   display: block;
   border: 1px solid #455a64;
@@ -474,21 +415,18 @@ header .nav-btns {
   line-height: 1.1em;
   transition: background-color 0.5s;
 }
-
-.added-section .item .btn {
-  margin: 24px 0 16px;
-}
-
 .added-section .item .btn-buy:hover {
   background-color: #455a64;
   color: #fff;
+}
+.added-section .item .btn {
+  margin: 24px 0 16px;
 }
 
 /*___________________contact us__________________*/
 .contactus-section {
   margin: 54px 0 32px;
 }
-
 .contactus-section h2 {
   color: #313131;
   font-size: 32px;
@@ -496,7 +434,6 @@ header .nav-btns {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 .contactus-section p {
   color: #21272a;
   font-size: 20px;
@@ -504,13 +441,11 @@ header .nav-btns {
   line-height: 1.1em;
   margin: 8px 0 32px;
 }
-
 .contactus-section .btn {
   display: flex;
   gap: 16px;
 }
-
-.contactus-section .btn-contact {
+.contactus-section .btn .btn-contact {
   border: 2px solid #455a64;
   background: #455a64;
   text-align: center;
@@ -521,13 +456,11 @@ header .nav-btns {
   font-weight: 500;
   transition: background-color 0.5s;
 }
-
-.contactus-section .btn-contact:hover {
+.contactus-section .btn .btn-contact:hover {
   background-color: #fff;
   color: #455a64;
 }
-
-.contactus-section .btn-readmore {
+.contactus-section .btn .btn-readmore {
   border: 2px solid #455a64;
   background: #fff;
   text-align: center;
@@ -538,8 +471,7 @@ header .nav-btns {
   font-weight: 500;
   transition: background-color 0.5s;
 }
-
-.contactus-section .btn-readmore:hover {
+.contactus-section .btn .btn-readmore:hover {
   background-color: #455a64;
   color: #fff;
 }
@@ -548,12 +480,10 @@ header .nav-btns {
 .subscribe-section {
   margin: 80px 0;
 }
-
 .subscribe-section .row {
   display: flex;
   gap: 80px;
 }
-
 .subscribe-section h2 {
   color: #21272a;
   font-size: 42px;
@@ -561,27 +491,23 @@ header .nav-btns {
   line-height: 1.1em;
   margin-bottom: 12px;
 }
-
 .subscribe-section p {
   color: #21272a;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4em;
 }
-
 .subscribe-section form {
   text-align: end;
 }
-
-.subscribe-section input {
+.subscribe-section form input {
   padding: 16px 100px 16px 16px;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.5px;
   color: #455a64;
 }
-
-.subscribe-section button {
+.subscribe-section form button {
   padding: 16px;
   text-align: center;
   color: #fff;
@@ -593,8 +519,7 @@ header .nav-btns {
   transition: background-color 0.5s;
   margin-left: 16px;
 }
-
-.subscribe-section button:hover {
+.subscribe-section form button:hover {
   background-color: #fff;
   color: #455a64;
 }
@@ -604,29 +529,24 @@ footer {
   background-color: #455a64;
   padding: 24px 0 48px;
 }
-
 footer .row {
   display: flex;
   justify-content: space-between;
 }
-
 footer .footer-nav ul {
   display: flex;
   gap: 16px;
 }
-
-footer .footer-nav a {
+footer .footer-nav ul a {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
 }
-
 footer .icon ul {
   display: flex;
   gap: 16px;
 }
-
-.bottom-footer {
+footer .bottom-footer {
   color: #fff;
   text-align: center;
   margin-top: 48px;
